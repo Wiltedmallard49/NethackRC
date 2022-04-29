@@ -17,18 +17,11 @@
 #
 # Use the IBM character set rather than just plain ascii characters
 # for tty window-port.
-OPTIONS=symset:IBMGraphics_2,roguesymset:RogueEpyx
+OPTIONS=symset:DECgraphics,roguesymset:RogueEpyx
 
 # Here is a suggested symbol set from Michael Feir, 
 # for use by blind NetHack players
 #OPTIONS=symset:NHAccess,roguesymset:NHAccess
-
-# Optional curses port interface
-OPTIONS=windowtype:curses
-OPTIONS=windowborders:2
-OPTIONS=perm_invent
-OPTIONS=align_message=top
-OPTIONS=align_status=left
 
 OPTIONS=fullscreen
 OPTIONS=showexp
@@ -201,7 +194,7 @@ OPTIONS=font_text:Courier New,font_size_text:14
 OPTIONS=font_status:Courier New,font_size_status:14
 
 # Other
-OPTIONS=hilite_pet,hilite_pile,!toptenwin
+OPTIONS=hilite_pet,hilite_pile,toptenwin
 #OPTIONS=!splash_screen,player_selection:prompts
 
 # Status/message window colors
